@@ -1,54 +1,56 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steve Charles Electrical Ltd</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="wrap">
-      <div class="contact-small">📞 01727 400 014 &nbsp; | &nbsp; ✉️ info@stevecharleselectrical.co.uk</div>
-      <nav class="topnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="team.html">Meet The Team</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      
-    </div>
-  </div>
 
-  <header class="hero wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="logo">
-      <img src="electricianstalbans.co.uk_--_90495433.jpg" alt="logo">
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <p>Steve Charles Electrical</p>
       </div>
-        <p class="lead">Reliable electricians for homes and businesses — installations, rewires, inspections and fast callouts.</p>
-        <p class="cta-row"><a class="btn" href="services.html">Our Services</a> <a class="btn ghost" href="contact.html">Get a Quote</a></p>
-        <div class="social">
-        <a href="https://www.instagram.com/steve_charles_electrical_ltd/" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram" class="icons"></a> <a href="https://www.facebook.com/p/Steve-Charles-Electrical-Ltd-100063570610785/" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook" class="icons"></a><a href="https://www.google.com/search?sca_esv=3d3edac27adaa913&sxsrf=AE3TifO14Ujg0VsHCNxNtn2hM1SyxoC-zw:1762947825858&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s0_f6hb8nl-Nr0LhK5nLX63hi32AJaCVNeYqX4lwuOtra28VLJriE1GwsuSkloKMLuoINNRgg3-_nAUY6NlqVwiKv7Ya1f9WlhBTEdo18PtG6mhqEw%3D%3D&q=Steve+Charles+Electrical+Ltd+Reviews&sa=X&ved=2ahUKEwi90Ku3xOyQAxWXxgIHHdQdMw4Q0bkNegQIJRAD&biw=1420&bih=768&dpr=2#lrd=0x48763c5abda3d9cf:0xe714585a27457428,3,,,," target="_blank"><img src="1_o7ISWcdbgvOFLpYAFl5n_Q.jpg" alt="Google" class="icons"></a> </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1><img src="sce.jpg" alt="logo"></h1>
+        <h1>Reliable electricians for homes and businesses</h1>
+        <p>Installations, rewires, inspections and fast callouts by a professional team you can trust.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn">Our Services</a>
+          <a href="contact.html" class="btn ghost">Get a Quote</a>
+        </div>
       </div>
-      <div class="hero-figure" aria-hidden="true"></div>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="intro card">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about">
+    <div class="container">
       <h2>About Steve Charles Electrical</h2>
-      <p>Steve Charles Electrical began as a one-man toolkit carried by Steve himself, moving from job to job with the kind of focus that turns small sparks into lasting work. What started as a straightforward local service quickly became something richer: a reputation for honesty, clean workmanship and the kind of reliability that neighbours pass along like a well-kept secret.
+      <p>Steve Charles Electrical began as a one-man toolkit carried by Steve himself, moving from job to job with the focus that turns small sparks into lasting work. What started as a local service quickly became a reputation for honesty, clean workmanship, and reliability passed along by neighbours.</p>
+      <p>As the demand grew, so did the team. Family joined first, then others who fit in as if they had always been part of the circuit. Today, the business is powered by a close-knit group that treats each project with the same care they bring to each other.</p>
+      <p>The company now handles everything from single-property callouts to full-scale commercial installations, always maintaining the same attitude Steve started with: do the job properly, treat people well, and leave every space safer than you found it.</p>
+    </div>
+  </section>
 
-As the demand grew, so did the team. Family stepped in first. Then people who weren’t family by blood but fit in as if they’d always been part of the circuit. Today the business is powered by a close-knit group that treats each other with the same care they bring to every project. Supportive, steady, and proud of the craft they share, the team has become the company’s backbone.
-
-That foundation has carried Steve Charles Electrical into larger arenas. From single-property callouts to full-scale commercial installations, the company now partners with major property management firms and oversees projects that once felt miles away from those early days. Each milestone is still approached with the same attitude Steve started with: do the job properly, treat people well, and leave every space safer than you found it.
-
-The business may have grown, but its heartbeat is unchanged. A family-run team with big-project capability and a genuine respect for the people behind every switch, socket and system.</p>
-    </section>
-
-    <section class="services card">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section services">
+    <div class="container">
       <h2>Popular Services</h2>
       <ul class="services-list">
         <li>Light & socket installations</li>
@@ -57,9 +59,12 @@ The business may have grown, but its heartbeat is unchanged. A family-run team w
         <li>Landlord/EICR inspections</li>
         <li>Exterior lighting & power</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="portfolio card">
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
       <h2>Portfolio</h2>
       <div class="gallery">
         <div class="img">Project 1</div>
@@ -68,16 +73,20 @@ The business may have grown, but its heartbeat is unchanged. A family-run team w
         <div class="img">Project 4</div>
       </div>
       <p class="muted">See more on the Services page or get in touch for a portfolio specific to your project.</p>
-    </section>
-  </main>
+    </div>
+  </section>
 
- <footer class="site-footer">
-    <div class="wrap">
-      <div class="foot-left">© 2025 Steve Charles Electrical Ltd All rights reserved - Designed by</div>
-      <a class="btn" href="https://designwithreb.com/" target="_blank" rel="noopener noreferrer"> Design With Reb</a>
-      <div class="foot-right">017272 400014— info@stevecharleselectrical.co.uk</div>
-      <p><a href="https://www.instagram.com/steve_charles_electrical_ltd/" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram" class="icons"></a> <a href="https://www.facebook.com/p/Steve-Charles-Electrical-Ltd-100063570610785/" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook" class="icons"></a></p>
-      
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Steve Charles Electrical Ltd. All rights reserved.</p>
+      <p>01727 400 014 — info@stevecharleselectrical.co.uk</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram"></a>
+      </div>
     </div>
   </footer>
 

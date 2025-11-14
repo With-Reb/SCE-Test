@@ -1,51 +1,62 @@
-<!-- contact.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — Steve Charles Electrical</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Steve Charles Electrical Ltd</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="wrap">
-      <div class="contact-small">📞 01727 400 014 &nbsp; | &nbsp; ✉️ info@stevecharleselectrical.co.uk</div>
-      <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="team.html">Meet The Team</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
-  </div>
 
-  <main class="wrap">
-    <section class="card">
-       <div>
-        <div class="logo">
-      <img src="electricianstalbans.co.uk_--_90495433.jpg" alt="logo">
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <p>Steve Charles Electrical</p>
       </div>
-      <h1>Get in touch</h1>
-      <p>Call or email us, or send a quick message below and we'll get back within one business day.</p>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+  
+      </ul>
+    </div>
+  </nav>
 
-      <form class="contact-form" action="https://formspree.io/f/xzzjnqnn" method="POST">
-       <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Message<textarea name="message" rows="6" required></textarea></label>
-        <p><button type="submit" class="btn">Send Message</button></p>
-    </form> 
+  <!-- HERO -->
+  <header class="hero" style="background-image: url('Andi.jpeg');">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1><img src="sce.jpg" alt="logo"></h1>
+        <h1>Contact Steve Charles Electrical</h1>
+        <p>Get in touch for a free quote or to discuss your electrical project.</p>
+      </div>
+    </div>
+  </header>
 
-    </section>
-  </main>
+  <!-- CONTACT FORM -->
+  <section class="section contact">
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email or Phone" required>
+        <textarea placeholder="Describe your project" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="foot-left">© 2025 Steve Charles Electrical Ltd All rights reserved - Designed by</div>
-      <a class="btn" href="https://designwithreb.com/" target="_blank" rel="noopener noreferrer"> Design With Reb</a>
-      <div class="foot-right">017272 400014— info@stevecharleselectrical.co.uk</div>
-      <p><a href="https://www.instagram.com/steve_charles_electrical_ltd/" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram" class="icons"></a> <a href="https://www.facebook.com/p/Steve-Charles-Electrical-Ltd-100063570610785/" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook" class="icons"></a></p>
-      
+      <div class="contact-info" style="margin-top:2rem; text-align:center;">
+        <p>☎ 01727 400 014</p>
+        <p>✉ info@stevecharleselectrical.co.uk</p>
+        <p>Based in Hertfordshire, serving local homes and businesses</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Steve Charles Electrical Ltd. All rights reserved.</p>
     </div>
   </footer>
 
