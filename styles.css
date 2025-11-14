@@ -167,12 +167,12 @@ img {
 .about-section {
     background-color: #0c233d4f;
     color: #ffffff;
-    padding: 60px 10px;
+    padding: 80px 20px;
     text-align: left;
 }
 
 .about-container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
