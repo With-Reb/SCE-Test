@@ -164,13 +164,37 @@ img {
 /* ---------------------------------------------------
    ABOUT
 --------------------------------------------------- */
+.about-section {
+    background-color: #0c233d;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: left;
+}
 
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-section h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    max-width: 800px;
+}
 .about p {
   margin-bottom: 1.2rem;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+ 
 }
 
 /* ---------------------------------------------------
@@ -189,6 +213,7 @@ img {
   margin: 0.6rem 0;
   border-radius: 6px;
   transition: 0.3s;
+  color: var(--white);
 }
 
 .services-list li:hover {
@@ -378,4 +403,18 @@ img {
   .about p {
     text-align: left;
   }
+}
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 20px;
+        text-align: left;
+    }
+
+    .about-section h2 {
+        font-size: 28px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
 }
