@@ -291,3 +291,170 @@ body {
   cursor: pointer;
 }
 
+/* -----------------------------------------
+   MOBILE RESPONSIVE STYLES
+   ----------------------------------------- */
+
+@media (max-width: 900px) {
+
+  /* Wrap */
+  .wrap {
+    width: 92%;
+    padding: 0;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .contact-small {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* NAVIGATION */
+  .topnav {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .topnav a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .hero-grid {
+    display: block;
+  }
+
+  .hero-figure {
+    height: 200px;
+    margin-top: 1.5rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  .logo img {
+    width: 160px;
+    margin: 0 auto 1rem;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0 auto 1.5rem;
+    max-width: 90%;
+  }
+
+  .cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 60%;
+    margin: 0.8rem auto 2rem;
+  }
+
+  .btn,
+  .btn.ghost {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+
+  /* SOCIAL ICONS */
+  .social {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .icons {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 1.2rem 1rem;
+    margin: 1.2rem 0;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* SERVICES LIST */
+  .services-list li {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  /* PORTFOLIO GRID */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gallery .img {
+    height: 180px;
+  }
+
+  /* TEAM PAGE */
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .team-member img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* CONTACT PAGE */
+  .contact-container {
+    display: block;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+  }
+
+  /* FOOTER */
+  .site-footer .wrap {
+    text-align: center;
+    display: block;
+  }
+
+  .foot-left,
+  .foot-right {
+    margin-bottom: 1rem;
+  }
+
+  .site-footer .btn {
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+  }
+}
+
