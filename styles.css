@@ -349,47 +349,62 @@ img {
     background: #13306e;
 }
 
-/* RESPONSIVE */
-@media (max-width: 850px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
+/* ---------------------------------------------------
+   UNIVERSAL FIXES
+--------------------------------------------------- */
+* {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* ---------------------------------------------------
-   MOBILE RESPONSIVE
+   TABLET & LARGE MOBILE (max 900px)
 --------------------------------------------------- */
-
 @media (max-width: 900px) {
+
+  .nav-container {
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+  }
+
   .nav-links {
-    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .hero {
-    height: 60vh;
+    height: auto;
+    padding: 80px 20px;
   }
 
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
 }
 
+/* ---------------------------------------------------
+   STANDARD MOBILE (max 600px)
+--------------------------------------------------- */
 @media (max-width: 600px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 
   .hero {
-    height: 55vh;
+    padding: 60px 20px;
+    text-align: center;
   }
 
   .hero-buttons {
     flex-direction: column;
+    gap: 1rem;
   }
 
   .gallery {
@@ -404,6 +419,10 @@ img {
     text-align: left;
   }
 }
+
+/* ---------------------------------------------------
+   ABOUT SECTION (safe mobile rules)
+--------------------------------------------------- */
 @media (max-width: 768px) {
     .about-section {
         padding: 60px 20px;
