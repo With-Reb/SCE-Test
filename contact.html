@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Steve Charles Electrical Ltd</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+  <title>Steve Charles Electrical Ltd</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="navbar">
+ <nav class="navbar">
     <div class="container nav-container">
       <div class="logo">
-        <p>Steve Charles Electrical</p>
+        <p>Steve Charles Electrical </p>
         <div class="social-icons">
         <a href="#" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook"></a>
         <a href="#" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram"></a></div>
@@ -21,83 +24,86 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
-  
+
       </ul>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero" style="background-image: url('Andi.jpeg');">
+   <header class="hero" style="background-image: url('Tools.jpeg');">
     <div class="hero-overlay">
       <div class="container hero-content">
-        <h1><img src="sce.jpg" alt="logo"></h1>
+        <h1><img src="sce.jpg" alt="logo" ></h1>
         <h1>Contact</h1>
         <h1>Steve Charles Electrical</h1>
         <p>Get in touch for a free quote or to discuss your electrical project.</p>
       </div>
     </div>
-  </header>
+    </header>
 
 
 
-<section class="contact-section">
-    <div class="contact-container">
+   <section class="contact-section">
+   <div class="contact-container">
 
-        <div class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>If you’d like to request a quote or need more information, use the form or contact us directly:</p>
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you’d like a quote, have a question, or want to book a job, fill out the form and we’ll get back to you promptly.</p>
 
-            <ul>
-                <li><strong>Phone:</strong> 01727 400 014</li>
-                <li><strong>Email:</strong> info@stevecharleselectrical.co.uk</li>
-                <li><strong>Location:</strong> St Albans</li>
-            </ul>
-        </div>
-
-        <form class="contact-form" action="#" method="POST">
-            <h2>Send a Message</h2>
-
-            <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your full name">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required placeholder="Your email address">
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
-            </div>
-            <div class="form-group">
-                <label for="address">Your Address *</label>
-                <input type="address" id="address" name="address" required placeholder="Your address">
-            </div>
-
-            <div class="form-group">
-                <label for="service">Service Required *</label>
-                <select id="service" name="service" required>
-                    <option value="">Select a service…</option>
-                    <option>Full Rewiring</option>
-                    <option>Fuse Board Upgrades</option>
-                    <option>Lighting Installation</option>
-                    <option>EV Charging</option>
-                    <option>Safety Certificates</option>
-                    <option>General Electrical Work</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" required placeholder="Describe your project or enquiry" rows="6"></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+      <ul>
+        <li><strong>📍 Address:</strong> St Albans, Hertfordshire</li>
+        <li><strong>📞 Phone:</strong> 01727 400 014</li>
+        <li><strong>📧 Email:</strong> info@stevecharleselectrical.co.uk</li>
+      </ul>
     </div>
-  </section>
+
+    <!-- Form -->
+    <form class="contact-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <h2>Send a Message</h2>
+
+      <!-- Required for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Needed</label>
+        <select id="service" name="service">
+          <option value="" selected disabled>Select service</option>
+          <option value="Light & socket installations">Light & socket installations</option>
+          <option value="Full & partial rewires">Full & partial rewires</option>
+          <option value="Consumer unit upgrade">Consumer unit upgrade</option>
+          <option value="EICR inspection">EICR inspection</option>
+          <option value="Exterior lighting & power">Exterior lighting & power</option>
+          <option value="Emergency callout">Emergency callout</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your job..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+  </div>
+</section>
 
   <!-- FOOTER -->
    <footer class="footer">
