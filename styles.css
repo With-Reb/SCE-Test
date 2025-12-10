@@ -20,11 +20,12 @@
 
 /* Dyslexia-friendly hybrid font stack */
 body {
-  font-family: "Atkinson Hyperlegible", Inter, Arial, sans-serif;
+  font-family:'arial';
   background: var(--bg);
   color: var(--text);
   line-height: 1.75;
   letter-spacing: 0.2px;
+  text-align: center;
 }
 
 img {
@@ -163,7 +164,7 @@ img {
 .accordion-btn {
   width: 100%;
   padding: 15px 20px;
-  background: #143454;
+  background: #0c233d;
   color: white;
   border: none;
   text-align: left;
@@ -176,7 +177,7 @@ img {
 }
 
 .accordion-btn:hover {
-  background: #143454;
+  background: #0c233d;
 }
 
 .accordion-content {
