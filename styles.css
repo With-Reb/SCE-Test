@@ -189,6 +189,120 @@ img {
 .accordion-content ul li {
   margin-bottom: 8px;
 }
+/* --- SERVICES SECTION WITH 2-LAYER BACKGROUND --- */
+#services {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* First background image (main photo) */
+.services-bg-layer {
+  position: absolute;
+  inset: 0;
+  background: url('images/electrician-bg.jpg') center/cover no-repeat;
+  z-index: 1;
+  opacity: 0.45; /* adjust */
+}
+
+/* Second background image (overlay texture/gradient) */
+.services-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('images/texture-overlay.png') center/cover no-repeat;
+  z-index: 2;
+  opacity: 0.25; /* adjust */
+}
+
+/* Content should appear ABOVE both backgrounds */
+#services .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Service Buttons */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.services-list .btn {
+  display: block;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s ease;
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+.services-list .btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-3px);
+}
+
+#services {
+  padding: 80px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  position: relative;
+  overflow: visible;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Background photo */
+.card-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+/* Post-it style block overlapping the image */
+.card-overlay {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: #0c233d; /* Post-it yellow (change if needed) */
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  width: calc(100% - 60px);
+}
+
+/* Mobile spacing fix */
+@media(max-width: 500px) {
+  .card-overlay {
+    bottom: -15px;
+    left: 15px;
+    width: calc(100% - 50px);
+  }
+}
 /* ---------------------------------------------------
    BUTTONS
 --------------------------------------------------- */
