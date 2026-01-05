@@ -754,7 +754,7 @@ img {
 --------------------------------------------------- */
 @media (max-width: 600px) {
   .nav-container {
-    flex-direction:column;
+    flex-direction:row;
     gap: 1rem;
   }
 }
