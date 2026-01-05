@@ -752,11 +752,15 @@ img {
 /* ---------------------------------------------------
    RESPONSIVE
 --------------------------------------------------- */
-@media (max-width: 600px) {
-  .nav-container {
-    flex-direction:row;
-    gap: 1rem;
+@media (max-width: 760px) {
+  .nav ul{
+    display: none;
   }
+
+  nav .hamburger {
+    display: block;
+  }
+
 }
 
 @media (max-width: 600px) {
