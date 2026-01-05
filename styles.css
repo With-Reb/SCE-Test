@@ -758,7 +758,7 @@ img {
   }
 
   nav .hamburger {
-    display: block;
+    display:list-item;
   }
 
 }
