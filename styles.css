@@ -769,22 +769,13 @@ img {
 /* ---------------------------------------------------
    RESPONSIVE
 --------------------------------------------------- */
-.nav-toggle {
-  display: none;
-}
+
 
 /* hide menu on small screens */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
-    flex-direction: column;
-  }
-  .nav-toggle:checked + .hamburger + .nav-menu {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
+    flex-direction: row;
   }
 }
 @media (max-width: 768px) {
@@ -794,7 +785,7 @@ img {
   }
   .nav ul.active {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: var(--navy);
     position: absolute;
     top: 60px;
