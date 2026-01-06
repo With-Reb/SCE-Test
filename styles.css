@@ -769,15 +769,17 @@ img {
 /* ---------------------------------------------------
    RESPONSIVE
 --------------------------------------------------- */
-/* MOBILE FIRST */
+.nav-toggle {
+  display: none;
+}
 
-/* hide by default on small screens */
+/* hide menu on small screens */
 @media (max-width: 768px) {
-  .nav ul {
+  .nav-menu {
     display: none;
     flex-direction: column;
   }
-  .nav ul.active {
+  .nav-toggle:checked + .hamburger + .nav-menu {
     display: flex;
   }
   .hamburger {
@@ -790,14 +792,15 @@ img {
   .nav ul {
     display: none;
   }
-
-  /* Show hamburger */
-  nav .hamburger {
+  .nav ul.active {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 12px;
+    flex-direction: column;
+    background: var(--navy);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
   }
 
   /* Hero layout */
