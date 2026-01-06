@@ -63,6 +63,10 @@ img {
   font-size: 1.25rem;
 }
 
+.logo { img {
+  width: 90px;
+} }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -125,8 +129,10 @@ img {
 }
 
 .hero-content img {
-  width: 350px;
+  width: 300px;
   margin-bottom: 1rem;
+  border-radius: 30px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
 }
 
 .hero-content h1 {
@@ -764,6 +770,21 @@ img {
    RESPONSIVE
 --------------------------------------------------- */
 /* MOBILE FIRST */
+
+/* hide by default on small screens */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  .nav ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
 @media (max-width: 768px) {
   /* Hide desktop nav */
   .nav ul {
