@@ -814,7 +814,7 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  background: #111;
+  background: #0c233d;
   display: none;
   flex-direction: column;
   text-align: center;
@@ -874,4 +874,3 @@ img {
     margin: 1rem auto 0;
     display: block;
   }
-}
