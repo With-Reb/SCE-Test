@@ -11,8 +11,8 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-   
+
+   <header class="site-header">
   <nav class="navbar">
     <div class="container nav-container">
       <div class="logo">
@@ -21,6 +21,10 @@
         <a href="#" target="_blank"><img src="—Pngtree—white icon_3570420.png" alt="Facebook"></a>
         <a href="#" target="_blank"><img src="—Pngtree—instagram white icon instagram instagram_3570419.png" alt="Instagram"></a></div>
       </div>
+       <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -30,6 +34,7 @@
       </ul>
     </div>
   </nav>
+   </header>
 
   <!-- HERO SECTION -->
    <header class="hero" data-bg="Paul2.jpeg">
@@ -404,7 +409,14 @@ updateSlide();
   startTimer();
 })();
 </script>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.nav-menu');
 
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
