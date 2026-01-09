@@ -761,6 +761,11 @@ img {
   margin-bottom: 0.7rem;
 }
 
+.footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .social-icons img {
   width: 30px;
   margin: 0 5px;
